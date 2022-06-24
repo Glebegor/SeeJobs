@@ -1,0 +1,9 @@
+{% extends "frontEnd/main-layout.html" %}
+{% block main %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" style="--Color1: #00ee28;" id="DefaultBTNForm" class="DefaultBTN" value="Submit" style="--Color1: #00ee28;">
+</form>
+{% endblock %}
+{% block scripts %}{% endblock %}

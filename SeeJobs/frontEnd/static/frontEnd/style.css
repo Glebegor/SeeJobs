@@ -1,0 +1,267 @@
+/* all */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+body
+{
+    background: #222222;
+    color: #00ee28;
+}
+.container
+{
+    margin: 0 auto;
+    width: 860px;
+}
+ul
+{
+    list-style: none
+}
+.Succses__Alert
+{
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #00ee28;
+    color: #222222;
+}
+.Errore__Alert
+{
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #ff3333;
+    color: #222222;
+}
+/* Buttons*/
+.DefaultBTN
+{    
+    transition: .3s;
+    
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 2px solid #fff; 
+}
+.DefaultBTN:hover
+{
+    transition: .3s;
+    transform: scale(1.2, 1.1);
+    box-shadow: 0 0 35px var(--Color1);
+    border-color: var(--Color1);
+}
+.DefaultBTN::before
+{
+    transition: .8s;
+    
+    top: -2px;
+    right: 20%;
+    position: absolute;
+    content: ' ';
+    
+    border-top: 3px solid #222222;
+    width: 20%;
+    height: 2px;
+}
+
+.DefaultBTN:hover::before
+{
+    transition: .8s;
+    right: 65%;
+    width: 25%;
+}
+.DefaultBTN::after
+{
+    transition: .8s;
+    
+    bottom: -2px;
+    left: 20%;
+    position: absolute;
+    content: ' ';
+    
+    border-bottom: 3px solid #222222;
+    width: 20%;
+    height: 2px;
+}
+
+.DefaultBTN:hover::after
+{
+    transition: .8s;
+    left: 65%;
+    width: 25%;
+}
+.DefaultBTN span
+{
+    transition: .3s;
+}
+.DefaultBTN:hover span
+{
+    transition: .3s;
+    color: var(--Color1);
+}
+#DefaultBTNForm
+{
+    margin: 0;
+    background: rgba(0,0,0,0);
+}
+#DefaultBTNForm:hover
+/* header */
+.logo 
+{
+    margin: 0px;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.FullNavBar{
+    display: flex;
+    align-items: center;
+}
+.navBar
+{
+    margin: 10px 0;
+    padding: 0px 25px; 
+    display: flex;
+
+    background: #fff; 
+    
+    border-radius: 20px;
+}
+.navLink
+{
+    position: relative;
+    transition: .3s;
+    padding: 10px
+}
+.navLink:hover .navImgInner
+{
+    transition: .3s;
+    transform: translateY(45px);
+}
+.navImgInner
+{
+    transition: .3s;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #fff;
+    
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.navImgInner::before
+{
+    bottom: 36%;
+    left: -26%;
+    content: ' ';
+    position: absolute;
+
+    border-top: 6px solid #fff;
+    border-right: 6px solid #fff;
+    border-top-right-radius: 20px;
+    width: 20px;
+    height: 10px;
+}
+.navImgInner:first-child::before
+{
+    bottom: 36%;
+    left: -16%;
+    width: 13px
+}
+.navImgInner::after
+{
+    bottom: 36%;
+    right: -26%;
+    content: ' ';
+    position: absolute;
+
+    border-top: 6px solid #fff;
+    border-left: 6px solid #fff;
+    border-top-left-radius: 20px;
+    width: 20px;
+    height: 10px;
+}
+.navImgInner:last-child::after
+{
+    bottom: 36%;
+    right: -16%;
+    width: 13px
+}
+.navImgInner > img
+{
+    width: 40px;
+    height: 40px;
+}
+.navLinkText
+{
+    opacity: 0;
+    text-decoration: none;
+    color: #00ee28;
+    font-weight: 500;
+    font-size: 18px;
+    display: none;
+}
+.navLink:hover .navLinkText
+{
+    opacity: 1;
+    transition: .3s;
+    position: absolute;
+    display: block; 
+    width: 60px;
+    left: 50%;
+    text-align: center;
+
+    transform: translateX(-50%) translateY(-250%);
+
+    
+}
+.BTNSNAV
+{
+    display: flex;
+    padding: 10px 0;
+}
+/* footer */
+footer
+{
+    border-top: 2px solid #00ee28;
+}
+.footerInner
+{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between
+}
+.footerItem
+{
+    padding: 10px 0;
+}
+.footerDown
+{
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    background: #1f1f1f;
+}
+/* forms */
+form
+{
+    height: 800px;
+    display: block;
+}
+.formReg
+{
+    width: 300px;
+}

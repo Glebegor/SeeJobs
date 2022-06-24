@@ -1,0 +1,12 @@
+{% extends "frontEnd/main-layout.html" %}
+
+{% block main %}
+<form action="." class="form formReg" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="Errore__Alert">{{ form.errors}}</div>
+    <input type="submit" style="--Color1: #00ee28;" id="DefaultBTNForm" class="DefaultBTN" value="Submit" style="--Color1: #00ee28;">
+</form>
+{% endblock %}
+
+{% block scripts %}{% endblock %}
