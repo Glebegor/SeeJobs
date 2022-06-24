@@ -6,8 +6,11 @@ def RegisterPage(request):
     form = UserForm(request.POST)
     if request.method == 'POST':
         if form.is_valid():
-            form.save()
-            return redirect('login')
+            if form.cleaned_data.get('password') == form.cleaned_data.get('password2'):
+                form.save()
+                return redirect('login')
+            else:
+                return {'errore': 'Password is not correct'}
     else:
         form = UserForm()
 
@@ -16,3 +19,5 @@ def RegisterPage(request):
         'title': 'Register'
     }
     return render(request, 'users/reg.html', data)
+def Profile(request):
+    return render(request, 'users/profile.html')

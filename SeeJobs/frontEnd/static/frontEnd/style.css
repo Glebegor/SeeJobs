@@ -30,9 +30,10 @@ ul
     background-color: #00ee28;
     color: #222222;
 }
-.Errore__Alert
+ul .errorelist
 {
     border-radius: 10px;
+    margin: 10px 0;
     padding: 40px;
     background-color: #ff3333;
     color: #222222;

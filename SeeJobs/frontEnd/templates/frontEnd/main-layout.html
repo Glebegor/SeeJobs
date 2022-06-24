@@ -32,7 +32,7 @@
                 </ul>
                 {% if user.is_authenticated %}
                     <div class="BTNSNAV">
-                        <a class="DefaultBTN" style="--Color1: #00ee28;" href={% url 'home' %}><span>Profile</span></a>
+                        <a class="DefaultBTN" style="--Color1: #00ee28;" href={% url 'profile' %}><span>Profile</span></a>
                         <a class="DefaultBTN" style="--Color1: #ff3333;" href={% url 'exit' %}><span>Exit</span></a>
                     </div>
                 {% else %}
